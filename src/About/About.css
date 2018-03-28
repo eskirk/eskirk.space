@@ -1,0 +1,20 @@
+.Title {
+   text-align: center;
+   padding: 2%;
+}
+
+.About {
+   text-align: left;
+   background-color: #383737;
+   border-radius: 0 0 5px 5px;
+   padding: 50px 50px;
+}
+
+.Code {
+   padding: 20px 0 0 0;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+pre {
+   color: white;
+}

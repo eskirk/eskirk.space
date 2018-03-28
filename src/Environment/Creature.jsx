@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Vector from '../Vector/Vector';
 
 class Creature extends Component {
@@ -133,7 +133,7 @@ class Creature extends Component {
       var count = 0;
 
       for (var i in neighbors) {
-         if (neighbors[i] != this) {
+         if (neighbors[i] !== this) {
             var d = this.location.distance(neighbors[i].location);
             if (d < 5 && d > 0) {
                var diff = this.location.copy().subtract(neighbors[i].location);
@@ -157,7 +157,7 @@ class Creature extends Component {
       var sum = new Vector(0,0);
 		var count = 0;
 		for (var i in neighbors) {
-			if (neighbors[i] != this) { 
+			if (neighbors[i] !== this) { 
 				sum.add(neighbors[i].velocity);
 				count++;
 			}
@@ -172,7 +172,7 @@ class Creature extends Component {
       var sum = new Vector(0, 0);
       var count = 0;
       for (var i in neighbors) 
-         if (neighbors[i] != this) {
+         if (neighbors[i] !== this) {
             sum.add(neighbors[i].location);
             count++;
          }

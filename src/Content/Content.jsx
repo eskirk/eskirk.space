@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Jumbotron, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import './Content.css';
 
 class Content extends Component {
@@ -10,12 +10,12 @@ class Content extends Component {
                <Card title='Projects' {...this.props} />
             </Col>
             <Col md={4}>
-               <a target='_blank' href='https://github.com/eskirk'>
-                  <Card title='GitHub' {...this.props} />
-               </a>
+               <Card title='About' {...this.props} />
             </Col>
             <Col md={4}>
-               <Card title='About' {...this.props} />
+               <a target='_blank' href='https://github.com/eskirk' rel="noopener noreferrer">
+                  <Card title='GitHub' {...this.props} />
+               </a>
             </Col>
          </Row>
       )
@@ -32,7 +32,7 @@ class Card extends Component {
    clicked(title) {
       console.log(title);
 
-      if (title != 'GitHub')
+      if (title !== 'GitHub')
          this.props.history.push('/' + this.title);
    }
 

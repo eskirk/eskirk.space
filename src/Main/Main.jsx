@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Tilt from 'react-tilt';
 import World from '../Environment/World';
 import Content from '../Content/Content';
 import Projects from '../Projects/Projects';
 import About from '../About/About';
-
 import './Main.css';
 
 class Main extends Component {
    render() {
       return (
-         <div className="Main" ref={e => this.element = e}>
-            <header className="Main-header">
-               <h1 className="Main-title">Elliot Kirk</h1>
+         <div className='Main' ref={e => this.element = e}>
+            <header className='Main-header'>
+               <a target='_blank' href='http://eskirk.space' rel="noopener noreferrer">
+                  <h1 className='Main-title'>Elliot Kirk</h1>
+               </a>
             </header>
             <div>
                <Switch>

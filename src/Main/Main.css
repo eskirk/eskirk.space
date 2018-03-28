@@ -23,8 +23,14 @@
 
 .Main-title {
    font-size: 60px;
+   color: white;
+   cursor: pointer;
 }
 
 .Main-intro {
    font-size: large;
+}
+
+a {
+   text-decoration: none;
 }
