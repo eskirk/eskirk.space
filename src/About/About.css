@@ -1,18 +1,31 @@
+@font-face {
+   font-family: Vulf-Light;
+   src: url('../assets/fonts/VulfMono-Light.ttf');
+}
+
+@font-face {
+   font-family: Vulf;
+   src: url('../assets/fonts/VulfMono-Regular.ttf');
+}
+
 .Title {
    text-align: center;
    padding: 2%;
+   font-family: Vulf;
 }
 
 .About {
    text-align: left;
    background-color: #383737;
    border-radius: 0 0 5px 5px;
-   padding: 50px 50px;
+   padding: 2% 2%;
+   max-width: 100%;
 }
 
 .Code {
-   padding: 20px 0 0 0;
+   padding: 2% 0 0 0;
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   max-width: 100%;
 }
 
 pre {

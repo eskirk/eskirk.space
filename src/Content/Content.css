@@ -3,6 +3,16 @@
    src: url('../assets/fonts/Moon Bold.otf');
 }
 
+@font-face {
+   font-family: Vulf-Light;
+   src: url('../assets/fonts/VulfMono-Light.ttf');
+}
+
+@font-face {
+   font-family: Vulf;
+   src: url('../assets/fonts/VulfMono-Regular.ttf');
+}
+
 .Menu {
    position: absolute;
    top: 200px;
@@ -38,7 +48,7 @@ a:hover {
 }
 
 .Card h3 {
-   font-family: Moon;
+   font-family: Vulf;
    color: white;
    opacity: 1;
    margin: 0 auto;

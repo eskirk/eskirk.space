@@ -11,8 +11,8 @@ class Main extends Component {
       return (
          <div className='Main' ref={e => this.element = e}>
             <header className='Main-header'>
-               <a target='_blank' href='http://eskirk.space' rel="noopener noreferrer">
-                  <h1 className='Main-title'>Elliot Kirk</h1>
+               <a href='http://eskirk.space' rel="noopener noreferrer">
+                  <h1 className='Main-title'>elliot kirk</h1>
                </a>
             </header>
             <div>

@@ -3,6 +3,11 @@
    src: url('../assets/fonts/Moon Bold.otf');
 }
 
+@font-face {
+   font-family: Vulf;
+   src: url('../assets/fonts/VulfMono-Light.ttf');
+}
+
 .Main {
    text-align: center;
    position: relative;
@@ -17,7 +22,7 @@
    padding: 20px;
    color: white;
    text-align: left;
-   font-family: Moon;
+   font-family: Vulf;
    user-select: none;
 }
 

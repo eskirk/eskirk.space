@@ -7,14 +7,14 @@ class Content extends Component {
       return (
          <Row className='Menu'>
             <Col md={4}>
-               <Card title='Projects' {...this.props} />
+               <Card title='projects' {...this.props} />
             </Col>
             <Col md={4}>
-               <Card title='About' {...this.props} />
+               <Card title='about' {...this.props} />
             </Col>
             <Col md={4}>
                <a target='_blank' href='https://github.com/eskirk' rel="noopener noreferrer">
-                  <Card title='GitHub' {...this.props} />
+                  <Card title='github' {...this.props} />
                </a>
             </Col>
          </Row>
@@ -32,7 +32,7 @@ class Card extends Component {
    clicked(title) {
       console.log(title);
 
-      if (title !== 'GitHub')
+      if (title !== 'github')
          this.props.history.push('/' + this.title);
    }
 
