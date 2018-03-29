@@ -7,7 +7,7 @@ class About extends Component {
    constructor(props) {
       super(props);
 
-      this.markdown = '```js \nlet my = new ElliotKirk();' 
+      this.markdown = '```js \nlet my = new ElliotKirk()' 
       + '\n\nmy.interests \n> [\'artificial intelligence\', \'full-stack development\', ' 
       + '\'data science\']'
       + '\n\nmy.languages \n> [\'JavaScript\', \'Python\', \'Java\', \'PHP\', \'SQL\', \'C\']' 
@@ -20,8 +20,8 @@ class About extends Component {
             <Row className='Title'>
                <Col md={2}/>
                <Col md={8}>
-                  <h4>
-                     Hi there, my name is Elliot Kirk
+                  <h4 className='AboutHeader'>
+                     Hello there, my name is Elliot Kirk
                   </h4>
                </Col>
                <Col md={2}/>

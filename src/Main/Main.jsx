@@ -19,8 +19,9 @@ class Main extends Component {
                <Switch>
                   {/* Homepage */}
                   <Route exact path='/' render={() =>
-                     <div>
+                     <div className='AboutContainer'>
                         <World {...this.props} />
+                        <About {...this.props} />
                         <Content {...this.props} />
                      </div>}
                   />

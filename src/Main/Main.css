@@ -8,6 +8,10 @@
    src: url('../assets/fonts/VulfMono-Light.ttf');
 }
 
+.AboutContainer {
+   user-select: none;
+}
+
 .Main {
    text-align: center;
    position: relative;
