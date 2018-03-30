@@ -1,6 +1,16 @@
-#canvas {
-   position: absolute;
-   left: 0;
-   cursor: default;
-   z-index: -1;
+@media all and (min-width: 768px) {
+   #canvas {
+      position: absolute;
+      left: 0;
+      cursor: default;
+      z-index: -1;
+   }
+}
+
+@media all and (max-width: 767px) {
+   #canvas {
+      height: 0px;
+      width: 0px;
+      display: none;
+   }
 }

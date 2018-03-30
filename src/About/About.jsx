@@ -4,17 +4,9 @@ import './About.css';
 import { DeviceDvr } from 'material-ui';
 
 class About extends Component {
-   constructor(props) {
-      super(props);
-   }
    render() {
       return (
          <div>
-            <Row className='Title'>
-               <h4 className='AboutHeader'>
-                  Hello there, my name is Elliot Kirk
-               </h4>
-            </Row>
             <Code/>
          </div>
       )

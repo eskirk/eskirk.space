@@ -41,26 +41,30 @@ class Main extends Component {
                pageWrapId={'Main'}
                outerContainerId={'MainWrapper'}
                onStateChange={this.isMenuOpen.bind(this)}>
-               <a target='_blank' href='https://github.com/eskirk' rel="noopener noreferrer">GitHub</a>
-               {/* <a href="#">Projects</a>
-               <Button onClick={ () => {
-                  this.setState({hiddenWorld: !this.state.hiddenWorld})
-                  console.log(this.state.hiddenWorld);
-               } }/> */}
+
+               <a href='#' onClick={() => this.props.history.push('/')}>Home</a>
+               <a href='#' onClick={() => this.props.history.push('/projects')}>Projects</a>
+               <a target='_blank' href='https://github.com/eskirk' rel='noopener noreferrer'>GitHub</a>
+               
+               <br/>
+               {this.state.hiddenWorld ? 
+                  <a href='#' onClick={() => this.setState({hiddenWorld: !this.state.hiddenWorld})}>Turn on background</a>
+               :
+                  <a href='#' onClick={() => this.setState({hiddenWorld: !this.state.hiddenWorld})}>Turn off background</a>}
             </Menu>
 
             <div className='Main' id='Main' ref={e => this.element = e}>
                <header className='Main-header'>
                   <Row>
-                     <Col md={6}>
-                        <a href='http://eskirk.space' rel="noopener noreferrer">
+                     <Col xs={6}>
+                        <a href='http://eskirk.space' rel='noopener noreferrer'>
                            <h1 className='Main-title'>elliot kirk</h1>
                         </a>
                      </Col>
-                     <Col md={6} className='Menu-button'>
+                     <Col xs={6} className='Menu-button'>
                         <Hamburger
                            active={this.state.active}
-                           type="slider"
+                           type='slider'
                            onClick={() => this.setState({ active: !this.state.active })}
                         />
                      </Col>
