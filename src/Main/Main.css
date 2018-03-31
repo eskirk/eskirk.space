@@ -57,7 +57,8 @@
 
 @media all and (max-width: 767px) {
    .Main-title {
-      font-size: 40px;
+      font-size: 35px;
+      line-height: 1.6;
       color: white;
       cursor: pointer;
       max-width: 100%;
@@ -131,6 +132,10 @@ a {
 .bm-item-list {
    color: #b8b7ad;
    padding: 0.8em;
+}
+
+.bm-item-list a {
+   color: white;
 }
 
 /* Styling of overlay */

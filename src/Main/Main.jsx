@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Hamburger from 'react-hamburgers';
 import { slide as Menu } from 'react-burger-menu'
 import World from '../Environment/World';
@@ -45,7 +45,7 @@ class Main extends Component {
                <a href='#' onClick={() => this.props.history.push('/')}>Home</a>
                <a href='#' onClick={() => this.props.history.push('/projects')}>Projects</a>
                <a target='_blank' href='https://github.com/eskirk' rel='noopener noreferrer'>GitHub</a>
-               
+
                <br/>
                {this.state.hiddenWorld ? 
                   <a href='#' onClick={() => this.setState({hiddenWorld: !this.state.hiddenWorld})}>Turn on background</a>
@@ -57,9 +57,7 @@ class Main extends Component {
                <header className='Main-header'>
                   <Row>
                      <Col xs={6}>
-                        <a href='http://eskirk.space' rel='noopener noreferrer'>
-                           <h1 className='Main-title'>elliot kirk</h1>
-                        </a>
+                        <h1 className='Main-title'>elliot kirk</h1>
                      </Col>
                      <Col xs={6} className='Menu-button'>
                         <Hamburger

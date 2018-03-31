@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Jumbotron, Row, Col } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import './About.css';
-import { DeviceDvr } from 'material-ui';
 
 class About extends Component {
    render() {
@@ -23,7 +22,7 @@ class Code extends Component {
                   <br/><br/>
                   my.interests 
                   <br/>
-                  > ['artificial intelligence', 'full-stack development', 'data science']
+                  > ['artificial intelligence', 'full-stack web development', 'data science']
                   <br/><br/>
                   my.hobbies 
                   <br/>
@@ -31,11 +30,19 @@ class Code extends Component {
                   <br/><br/>
                   my.education
                   <br/>
-                  > 'Cal Poly San Luis Obispo - Computer Science'
+                  > 'California Polytechnic State University - San Luis Obispo'
+                  <br/><br/>
+                  my.major
+                  <br/>
+                  > 'Computer Science'
                   <br/><br/>
                   my.graduation_date
                   <br/>
                   > 'Fall 2018'
+                  <br/><br/>
+                  my.email
+                  <br/>
+                  > 'elliot.s.kirk@gmail.com'
                   <br/><br/>
                   my.resume 
                   <br/>

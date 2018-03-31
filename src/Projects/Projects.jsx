@@ -1,25 +1,52 @@
 import React, { Component } from 'react';
-import { Jumbotron, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Col } from 'react-bootstrap';
 import './Projects.css';
 
 class Projects extends Component {
    render() {
       return (
+         <div className='ProjectsContainer'>
+            <Col xs={10}>
+               <Project
+                  title='A genetic algorithm written in Python that learns to play pong'
+                  link='https://github.com/eskirk/GeneticAlgorithmPong'
+               />
+               <Project
+                  title='A simple natural selection simulator written in Python'
+                  link='https://github.com/eskirk/NaturalSelection'
+               />
+               <Project
+                  title='A Restful chat service web API written in Node.js'
+                  link='https://github.com/eskirk/ChatService'
+               />
+               <Project
+                  title='The React.js front-end for the chat service web application'
+                  link='https://github.com/eskirk/CHS-react'
+               />
+            </Col>
+         </div >
+      )
+   }
+}
+
+class Project extends Component {
+   constructor(props) {
+      super(props);
+
+      this.title = props.title;
+      this.link = props.link;
+   }
+
+   render() {
+      return (
          <div>
-            <Row>
-               <Col md={2} />
-               <Col md={8}>
-                  <Jumbotron className='Projects'>
-                     <h2>
-                        Coming soon
-                     </h2>
-                     <h4>
-                        In the meantime, check out my GitHub
-                     </h4>
-                  </Jumbotron>
-               </Col>
-               <Col md={2} />
-            </Row>
+            <Jumbotron className='Project'>
+               <h4>
+                  {this.title}
+               </h4>
+               <br />
+               <a href={this.link}>GitHub</a>
+            </Jumbotron>
          </div>
       )
    }
