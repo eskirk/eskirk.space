@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron } from 'react-bootstrap';
+import Resume from './Resume.pdf';
 import './About.css';
 
 class About extends Component {
@@ -46,7 +47,7 @@ class Code extends Component {
                   <br/><br/>
                   my.resume 
                   <br/>
-                  > <a target='_blank' href='./Resume.pdf' rel="noopener noreferrer">Resume.pdf</a>
+                  > <a href={Resume} target='_blank' rel="noopener noreferrer">Resume.pdf</a>
                </code>
             </Jumbotron>
          </Jumbotron>
